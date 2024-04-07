@@ -9,8 +9,7 @@ namespace ClosedXMLTwo
             Console.WriteLine("Введите путь до файла с данными (формат xlsx):");
             pathToExcelFile = Console.ReadLine();
 
-            string filePath = "C:\\Users\\DateKyosuke.KOYRAVA\\Downloads\\Практическое задание для кандидата.xlsx";
-            var wb = new XLWorkbook(filePath);
+            var wb = new XLWorkbook(pathToExcelFile);
             var wsProducts = wb.Worksheet(1);
             var wsClients = wb.Worksheet(2);
             var wsOrders = wb.Worksheet(3);
